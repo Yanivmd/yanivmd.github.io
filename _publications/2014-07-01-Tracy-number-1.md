@@ -2,7 +2,7 @@
 title: "Tracelet-Based Code Search in Executables"
 collection: publications
 permalink: /publication/2014-07-01-Tracy
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+#excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2014-07-01
 venue: 'PLDI 14'
 paperurl: 'http://academicpages.github.io/files/tracelets_pldi2014.pdf'
