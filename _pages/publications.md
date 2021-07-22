@@ -10,6 +10,6 @@ author_profile: true
 {% endif %}
 
 <br>
-<b>[Tracelet-Based Code Search in Executables](/publications/Tracy.md)</b> <br>
+<b>[Tracelet-Based Code Search in Executables](publications/Tracy)</b> <br>
 <b>Yaniv David</b> and Eran Yahav
 <b><i>PLDI</i> 2014</b>.
