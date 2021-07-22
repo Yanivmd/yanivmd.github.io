@@ -13,3 +13,5 @@ author_profile: true
 <b>[Tracelet-Based Code Search in Executables](publications/Tracy)</b> <br>
 <b>Yaniv David</b> and Eran Yahav
 <b><i>PLDI</i> 2014</b>.
+<br>
+[[Paper]](files/Tracy-Paper.pdf) [[Slides]](files/Tracy-Slides.pdf) [[Code]](https://github.com/Yanivmd/TRACY)
