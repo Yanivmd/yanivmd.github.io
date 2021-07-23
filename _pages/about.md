@@ -1,13 +1,54 @@
 ---
 permalink: /
-title: "About Me"
-excerpt: "About me"
+title: ""
+excerpt: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+# About Me
+
 * I am a PostDoc at [Columbia University](https://www.columbia.edu), working with [Junfeng Yang](http://www.cs.columbia.edu/~junfeng/).
 * Currently I am interested in Combining machine-learning with program anlaysis towards improving software rubostness and security.
 * I earned my PhD from the [Technion](https://www.technion.ac.il), advised by [Eran Yahav](https://www.cs.technion.ac.il/~yahave/).
+
+# Publications
+
+
+
+<br>
+<b>[Neural Reverse Engineering of Stripped Binaries using Augmented Control Flow Graphs](publications/Nero)</b> <br>
+<b>Yaniv David</b>, Uri Alon and Eran Yahav. <br>
+<b><i>OOPSLA</i> 2020</b>.
+<br><br>
+[[Paper]](/files/Nero-Paper.pdf) [[Slides]](/files/Nero-Slides.pdf) [[Code]](https://github.com/tech-srl/Nero) [[Video]](https://www.youtube.com/watch?v=CnCYd9QuiJ0)
+
+<br>
+<b>[FirmUp: Precise Static Detection of Common Vulnerabilities in Firmware](publications/FirmUp)</b> <br>
+<b>Yaniv David</b>, Nimrod Partush and Eran Yahav. <br>
+<b><i>ASPLOS</i> 2018</b>.
+<br><br>
+[[Paper]](/files/FirmUP-Paper.pdf) [[Slides]](/files/FirmUP-Slides.pdf)
+
+<br>
+<b>[Similarity of Binaries through re-Optimization](publications/GitZ)</b> <br>
+<b>Yaniv David</b>, Nimrod Partush and Eran Yahav. <br>
+<b><i>PLDI</i> 2017</b>.
+<br><br>
+[[Paper]](/files/GitZ-Paper.pdf) [[Slides]](/files/GitZ-Slides.pdf)
+
+<br>
+<b>[Statistical Similarity of Binaries](publications/Esh)</b> <br>
+<b>Yaniv David</b>, Nimrod Partush and Eran Yahav. <br>
+<b><i>PLDI</i> 2016</b>.
+<br><br>
+[[Paper]](/files/ESH-Paper.pdf) [[Slides]](/files/ESH-Slides.pdf) [[Demo]](http://binsim.com) [[Dataset]](https://github.com/tech-srl/esh)
+
+<br>
+<b>[Tracelet-Based Code Search in Executables](publications/Tracy)</b> <br>
+<b>Yaniv David</b> and Eran Yahav. <br>
+<b><i>PLDI</i> 2014</b>.
+<br><br>
+[[Paper]](/files/Tracy-Paper.pdf) [[Slides]](/files/Tracy-Slides.pdf) [[Code]](https://github.com/Yanivmd/TRACY)
