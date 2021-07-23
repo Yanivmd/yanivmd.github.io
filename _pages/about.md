@@ -14,11 +14,10 @@ redirect_from:
 * Currently I am interested in Combining machine-learning with program anlaysis towards improving software rubostness and security.
 * I earned my PhD from the [Technion](https://www.technion.ac.il), advised by [Eran Yahav](https://www.cs.technion.ac.il/~yahave/).
 
+<br><br>
+
 # Publications
 
-
-
-<br>
 <b>[Neural Reverse Engineering of Stripped Binaries using Augmented Control Flow Graphs](publications/Nero)</b> <br>
 <b>Yaniv David</b>, Uri Alon and Eran Yahav. <br>
 <b><i>OOPSLA</i> 2020</b>.
