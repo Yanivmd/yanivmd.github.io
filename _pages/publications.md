@@ -21,7 +21,7 @@ author_profile: true
 <b>Yaniv David</b>, Nimrod Partush and Eran Yahav. <br>
 <b><i>ASPLOS</i> 2018</b>.
 <br><br>
-[[Paper]](/files/FirmUp-Paper.pdf) [[Slides]](/files/FirmUp-Slides.pdf)
+[[Paper]](/files/FirmUP-Paper.pdf) [[Slides]](/files/FirmUP-Slides.pdf)
 
 <br>
 <b>[Similarity of Binaries through re-Optimization](publications/GitZ)</b> <br>
