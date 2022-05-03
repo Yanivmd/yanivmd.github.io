@@ -11,14 +11,14 @@ redirect_from:
 # About Me
 
 * I am a PostDoc at [Columbia University](https://www.columbia.edu), working with [Junfeng Yang](http://www.cs.columbia.edu/~junfeng/).
-* Currently, I am interested in Combining machine learning with program analysis towards improving software robustness and security.
+* Currently, I am interested in combining machine learning with program analysis towards improving software robustness and security.
 * I earned my PhD from the [Technion](https://www.technion.ac.il), advised by [Eran Yahav](https://www.cs.technion.ac.il/~yahave/).
 
 <br><br>
 
 # Publications
 
-<b>[Neural Reverse Engineering of Stripped Binaries using Augmented Control Flow Graphs](publications/Nero)</b> <br>
+<b>[Neural Reverse Engineering of Stripped Binaries using Augmented Control Flow Graphs](publications/NERO)</b> <br>
 <b>Yaniv David</b>, Uri Alon and Eran Yahav. <br>
 <b><i>OOPSLA</i> 2020</b>.
 <br><br>
