@@ -11,6 +11,13 @@ author_profile: true
 
 
 
+<br>
+<b>[UPGRADVISOR: Early Adopting Dependency Updates Using Production Traces](publications/Upgradvisor)</b> <br>
+<b>Yaniv David</b>, Xudong Sun, Aditya Senthilnathan, Raphael J. Sofaer, Junfeng Yang, Zhiqiang Zuo, Guoqing Harry Xu, Jason Nieh and Ronghui Gu.<br>
+<b><i>OSDI</i> 2022</b>.
+<br><br>
+[[Soon]](https://yanivmd.github.io)
+
 
 <br>
 <b>[Neural Reverse Engineering of Stripped Binaries using Augmented Control Flow Graphs](publications/Nero)</b> <br>
