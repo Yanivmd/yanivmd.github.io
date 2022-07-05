@@ -11,18 +11,18 @@ redirect_from:
 # About Me
 
 * I am a PostDoc at [Columbia University](https://www.columbia.edu), working with [Junfeng Yang](http://www.cs.columbia.edu/~junfeng/).
-* Currently, I am interested in combining machine learning with program analysis towards improving software robustness and security.
+* Interested in combining program analysis with machine learning towards improving software robustness and security.
 * I earned my PhD from the [Technion](https://www.technion.ac.il), advised by [Eran Yahav](https://www.cs.technion.ac.il/~yahave/).
 
 <br><br>
 
 # Publications
 
-<b>[UPGRADVISOR: Early Adopting Dependency Updates Using Production Traces](publications/Upgradvisor)</b> <br>
-<b>Yaniv David</b>, Xudong Sun, Aditya Senthilnathan, Raphael J. Sofaer, Junfeng Yang, Zhiqiang Zuo, Guoqing Harry Xu, Jason Nieh and Ronghui Gu.<br>
+<b>[UPGRADVISOR: Early Adopting Dependency Updates Using Hybrid Program Analysis and Hardware Tracing](publications/Upgradvisor)</b> <br>
+<b>Yaniv David</b>, Xudong Sun, Raphael J. Sofaer, Aditya Senthilnathan, Junfeng Yang, Zhiqiang Zuo, Guoqing Harry Xu, Jason Nieh and Ronghui Gu.<br>
 <b><i>OSDI</i> 2022</b>.
 <br><br>
-[[Soon]](https://yanivmd.github.io)
+[[Paper]](/files/Upgradvisor-Paper.pdf) [[Slides(Soon)]]((https://yanivmd.github.io)) [[Website]](https://upgradvisor.github.io) [[Github APP]](https://github.com/apps/upgradvisor-python3)
 
 <br>
 <b>[Neural Reverse Engineering of Stripped Binaries using Augmented Control Flow Graphs](publications/NERO)</b> <br>
