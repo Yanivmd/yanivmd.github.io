@@ -22,7 +22,7 @@ redirect_from:
 <b>Yaniv David</b>, Xudong Sun, Raphael J. Sofaer, Aditya Senthilnathan, Junfeng Yang, Zhiqiang Zuo, Guoqing Harry Xu, Jason Nieh and Ronghui Gu.<br>
 <b><i>OSDI</i> 2022</b>.
 <br><br>
-[[Paper]](/files/Upgradvisor-Paper.pdf) [[Slides]](/files/Upgradvisor-Slides.pdf) [[Video]](https://www.youtube.com/watch?v=biOtVArU0co)[[Website]](https://upgradvisor.github.io) [[Github APP]](https://github.com/apps/upgradvisor-python3)
+[[Paper]](/files/Upgradvisor-Paper.pdf) [[Slides]](/files/Upgradvisor-Slides.pdf) [[Video]](https://www.youtube.com/watch?v=biOtVArU0co) [[Website]](https://upgradvisor.github.io) [[Github APP]](https://github.com/apps/upgradvisor-python3)
 
 <br>
 <b>[Neural Reverse Engineering of Stripped Binaries using Augmented Control Flow Graphs](publications/NERO)</b> <br>
