@@ -24,8 +24,9 @@ redirect_from:
 <br><br>
 [[Paper]](/files/Upgradvisor-Paper.pdf) [[Slides]](/files/Upgradvisor-Slides.pdf) [[Video]](https://www.youtube.com/watch?v=biOtVArU0co) [[Website]](https://upgradvisor.github.io) [[Github APP]](https://github.com/apps/upgradvisor-python3)
 
+<br>
 <b>[NeuDep: Neural Binary Memory Dependence Analysis](publications/NeuDep)</b> <br>
-Kexin Pei, Dongdong She, Michael Wang, Scott Geng, Zhou Xuan, Yaniv David, Junfeng Yang, Suman Jana, Baishakhi Ray<br>
+Kexin Pei, Dongdong She, Michael Wang, Scott Geng, Zhou Xuan, <b>Yaniv David</b>, Junfeng Yang, Suman Jana, Baishakhi Ray<br>
 <b><i>ESEC/FSE</i> 2022</b>.
 <br><br>
 [[Paper]](/files/NeuDep-Paper.pdf)
