@@ -18,6 +18,12 @@ redirect_from:
 
 # Publications
 
+<b>[QUACK: Hindering Deserialization Attacks via Static Duck Typing](publications/QUACK)</b> <br>
+<b>Yaniv David</b>, Neophytos Christou, Andreas D. Kellas, Vasileios P. Kemerlis, Junfeng Yang<br>
+<b><i>To Appear NDSS</i> 2024</b>.
+<br><br>
+[[Paper]](/files/QUACK-Paper-PrePrint.pdf)
+
 <b>[UPGRADVISOR: Early Adopting Dependency Updates Using Hybrid Program Analysis and Hardware Tracing](publications/Upgradvisor)</b> <br>
 <b>Yaniv David</b>, Xudong Sun, Raphael J. Sofaer, Aditya Senthilnathan, Junfeng Yang, Zhiqiang Zuo, Guoqing Harry Xu, Jason Nieh and Ronghui Gu.<br>
 <b><i>OSDI</i> 2022</b>.
