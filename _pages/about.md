@@ -30,7 +30,7 @@ Raphael J. Sofaer, <b>Yaniv David</b>, Mingqing Kang, Jianjia Yu, Yinzhi Cao, Ju
 Nieh<br>
 <b><i>ICSE</i> 2024</b>.
 <br><br>
-[[Paper-Soon]]
+[[Paper-Soon]](https://yanivmd.github.io)
 
 <b>[UPGRADVISOR: Early Adopting Dependency Updates Using Hybrid Program Analysis and Hardware Tracing](publications/Upgradvisor)</b> <br>
 <b>Yaniv David</b>, Xudong Sun, Raphael J. Sofaer, Aditya Senthilnathan, Junfeng Yang, Zhiqiang Zuo, Guoqing Harry Xu, Jason Nieh and Ronghui Gu.<br>
