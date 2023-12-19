@@ -24,6 +24,14 @@ redirect_from:
 <br><br>
 [[Pre-Print]](/files/QUACK-Paper-PrePrint.pdf)
 
+<b>[RogueOne: Detecting Rogue Updates via Differential Data-flow Analysis Using Trust
+Domains](publications/RO)</b> <br>
+Raphael J. Sofaer, <b>Yaniv David</b>, Mingqing Kang, Jianjia Yu, Yinzhi Cao, Junfeng Yang, Jason
+Nieh<br>
+<b><i>ICSE</i> 2024</b>.
+<br><br>
+[[Paper-Soon]]
+
 <b>[UPGRADVISOR: Early Adopting Dependency Updates Using Hybrid Program Analysis and Hardware Tracing](publications/Upgradvisor)</b> <br>
 <b>Yaniv David</b>, Xudong Sun, Raphael J. Sofaer, Aditya Senthilnathan, Junfeng Yang, Zhiqiang Zuo, Guoqing Harry Xu, Jason Nieh and Ronghui Gu.<br>
 <b><i>OSDI</i> 2022</b>.
