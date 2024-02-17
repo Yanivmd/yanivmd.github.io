@@ -6,4 +6,4 @@ venue: "NDSS"
 date: 2024-02-26
 ---
 
-[[Paper]](/files/QUACK-Paper.pdf) [[Slides-Soon]]
+[[Paper]](/files/QUACK-Paper.pdf) [[Code]](https://github.com/columbia/quack) [[Slides-Soon]](https://yanivmd.github.io) [[Slides-Soon]]
