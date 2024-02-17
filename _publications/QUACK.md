@@ -6,4 +6,4 @@ venue: "NDSS"
 date: 2024-02-26
 ---
 
-[[Paper]](/files/QUACK-Paper-PrePrint.pdf) [[Slides-Soon]]
+[[Paper]](/files/QUACK-Paper.pdf) [[Slides-Soon]]
