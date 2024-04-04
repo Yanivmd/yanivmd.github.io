@@ -22,7 +22,7 @@ redirect_from:
 <b>Yaniv David</b>, Neophytos Christou, Andreas D. Kellas, Vasileios P. Kemerlis, Junfeng Yang<br>
 <b><i>NDSS</i> 2024</b>.
 <br><br>
-[[Paper]](/files/QUACK-Paper.pdf) [[Code]](https://github.com/columbia/quack) [[Slides-Soon]](https://yanivmd.github.io)
+[[Paper]](/files/QUACK-Paper.pdf) [[Code]](https://github.com/columbia/quack) [[Slides]](/files/Quack_Slides-FIXED.pdf) [[Video]](https://youtu.be/RKiFQwH7Pik?si=9FYwtOh-CklBV1vI)
 
 <b>RogueOne: Detecting Rogue Updates via Differential Data-flow Analysis Using Trust
 Domains</b> <br>
