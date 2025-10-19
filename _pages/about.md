@@ -10,8 +10,10 @@ redirect_from:
 
 # About Me
 
-* I am a PostDoc at [Columbia University](https://www.columbia.edu), working with [Junfeng Yang](http://www.cs.columbia.edu/~junfeng/).
-* Interested in combining program analysis with machine learning towards improving software robustness and security.
+* I am an Assistant Professor at the Technion - Israel Institute of Technology.
+* I'm boardly interested in program analysis, systems, and security.
+* My current research thrusts are automatic software reverse-engineering and securing agentic systems.
+* I was a PostDoc at [Columbia University](https://www.columbia.edu), were I worked with [Junfeng Yang](http://www.cs.columbia.edu/~junfeng/).
 * I earned my PhD from the [Technion](https://www.technion.ac.il), advised by [Eran Yahav](https://www.cs.technion.ac.il/~yahave/).
 
 <br><br>
