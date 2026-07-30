@@ -21,14 +21,16 @@ RUN chown -R vscode:vscode /usr/src/app
 # Switch to the non-root user
 USER vscode
 
-# Copy Gemfile into the container (necessary for `bundle install`)
-COPY Gemfile ./
+# Copy the dependency manifest and lockfile before installing. The lockfile must
+# be present here so the image contains the exact versions Jekyll will request
+# after the repository is mounted by Docker Compose.
+COPY --chown=vscode:vscode Gemfile Gemfile.lock ./
 
 
 
 # Install bundler and dependencies
 RUN gem install connection_pool:2.5.0
-RUN gem install bundler:2.3.26
+RUN gem install bundler:2.3.25
 RUN bundle install
 
 # Command to serve the Jekyll site
