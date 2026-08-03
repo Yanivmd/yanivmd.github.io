@@ -1,0 +1,44 @@
+# This file is the source of truth for the Teaching page.
+# Empty lists are automatically hidden.
+#
+# Example current course:
+#
+# current:
+#   - number: "236123"
+#     title: "Course title"
+#     term: "Spring 2026"
+#     url: "https://course-website.example"
+#     materials:
+#       - label: "Syllabus"
+#         url: "/files/course-syllabus.pdf"
+#       - label: "Lecture notes"
+#         url: "https://materials.example"
+#
+# Example past course:
+#
+# past:
+#   - number: "236456"
+#     title: "Previous course title"
+#     term: "Fall 2025"
+#     url: "https://previous-course.example"
+#
+# All fields except `title` are optional. Remove the leading `#` characters and
+# replace `current: []` or `past: []` below when adding real entries.
+
+current: 
+  - number: "2360029"
+    title: "Securing Agentic Systems"
+    term: "Winter2026"
+    url: "TBD"
+
+  - number: "2360350"
+    title: "Network Security"
+    term: "Spring2026"
+    url: "https://webcourse.cs.technion.ac.il/02360350/Spring2026/"
+
+  - number: "0480082"
+    title: "Security Seminar"
+    term: "Spring2026"
+    url: "/files/SecSeminarPapers_Spring25-26.pdf"
+
+past: []

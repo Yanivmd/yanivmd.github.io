@@ -15,29 +15,7 @@ redirect_from:
 * I was a PostDoc at [Columbia University](https://www.columbia.edu), were I worked with [Junfeng Yang](http://www.cs.columbia.edu/~junfeng/).
 * I earned my PhD from the [Technion](https://www.technion.ac.il), advised by [Eran Yahav](https://www.cs.technion.ac.il/~yahave/).
 
-<style>
-.notice-box {
-background-color: #e8faff;
-border: 2px solid #333;
-border-radius: 8px;
-padding: 18px 22px;
-width: 90%;
-max-width: 600px;
-margin: 20px auto;
-font-size: 1.05em;
-line-height: 1.45;
-}
-.notice-box p:last-child {
-margin-bottom: 0; /* removes the extra line skip at the bottom */
-}
-/* Minima dark mode */
-html[data-theme="dark"] .notice-box {
-background-color: #1e2a30;
-border-color: #ccc;
-color: #f0f0f0;
-}
-</style>
-<div class="notice-box"> <p> I am actively recruiting a small number of Master and PhD students. If you are curious, open to challenges, and eager to learn, we should talk. </p> <p> Technion CS and ECE undergraduates: if you would like to join a research project for academic credits, please reach out.</p> </div>
+{% include recruiting-notice.html %}
 
 # Publications
 

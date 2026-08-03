@@ -1,0 +1,50 @@
+# This file is the source of truth for the Group page.
+#
+# To add a current member, replace a group's empty `members: []` with:
+#
+# members:
+#   - name: "Full name"
+#     url: "https://..."              # optional personal/profile page
+#     role: "PhD student"             # optional if the section title is enough
+#     topic: "Research topic"         # optional
+#     co_advisor: "Co-advisor name"   # optional
+#
+# Empty groups are automatically hidden from the rendered page.
+
+current:
+#  - title: "Postdoctoral researchers"
+    
+
+  #- title: "PhD students"
+    
+
+  - title: "Master's students"
+    members: 
+      - name: "Awatef Khoury"
+        #url: "https://..."              # optional personal/profile page
+        #topic: "Research topic"         # optional
+        co_advisor: "Gabi Nakibly, Radware and Technion"   # optional
+
+      - name: "Michael Blum"
+        #url: "https://..."              # optional personal/profile page
+        #topic: "Research topic"         # optional
+        co_advisor: "Mark Silberstein, Technion"   # optional
+
+  #- title: "Undergraduate researchers"
+  #  members: 
+  #    - name: "Michael Blum"
+        #url: "https://..."              # optional personal/profile page
+        #topic: "Research topic"         # optional
+
+  - title: "Research staff and visitors"
+    members: []
+
+# To add an alumnus/alumna:
+#
+alumni:
+   - name: "Hila Ziv"
+#     url: "https://..."              # optional
+     degree: "MSc"                   # optional: PhD, MSc, postdoc, visitor, etc.
+     year: 2026                      # optional completion year
+#     topic: "Research topic"         # optional
+     #next_position: "Organization"   # optional

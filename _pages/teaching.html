@@ -1,0 +1,41 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+---
+
+{% assign teaching = site.data.teaching %}
+
+{% if teaching.current.size > 0 %}
+  <h2>Current and recent courses</h2>
+  <ul>
+    {% for course in teaching.current %}
+      <li>
+        {% if course.url %}<a href="{{ course.url }}">{% endif %}
+          {% if course.number %}{{ course.number }}: {% endif %}{{ course.title }}
+        {% if course.url %}</a>{% endif %}
+        {% if course.term %} — {{ course.term }}{% endif %}
+        {% if course.materials %}
+          {% for material in course.materials %}
+            [<a href="{{ material.url }}">{{ material.label }}</a>]
+          {% endfor %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if teaching.past.size > 0 %}
+  <h2>Past courses</h2>
+  <ul>
+    {% for course in teaching.past %}
+      <li>
+        {% if course.url %}<a href="{{ course.url }}">{% endif %}
+          {% if course.number %}{{ course.number }}: {% endif %}{{ course.title }}
+        {% if course.url %}</a>{% endif %}
+        {% if course.term %} — {{ course.term }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

@@ -1,0 +1,40 @@
+---
+layout: archive
+title: "Group"
+permalink: /group/
+author_profile: true
+---
+
+{% assign people = site.data.people %}
+
+{% for group in people.current %}
+  {% if group.members.size > 0 %}
+    <h2>{{ group.title }}</h2>
+    <ul>
+      {% for person in group.members %}
+        <li>
+          <strong>{% if person.url %}<a href="{{ person.url }}">{% endif %}{{ person.name }}{% if person.url %}</a>{% endif %}</strong>
+          {% if person.role %} — {{ person.role }}{% endif %}
+          {% if person.topic %}<br>{{ person.topic }}{% endif %}
+          {% if person.co_advisor %}<br>Co-advised with {{ person.co_advisor }}{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
+
+{% if people.alumni.size > 0 %}
+  <h2>Alumni</h2>
+  <ul>
+    {% for person in people.alumni %}
+      <li>
+        {% if person.url %}<a href="{{ person.url }}">{% endif %}{{ person.name }}{% if person.url %}</a>{% endif %}
+        {% if person.degree or person.year %}
+          ({% if person.degree %}{{ person.degree }}{% endif %}{% if person.degree and person.year %}, {% endif %}{% if person.year %}{{ person.year }}{% endif %})
+        {% endif %}
+        {% if person.topic %} — {{ person.topic }}{% endif %}
+        {% if person.next_position %} → {{ person.next_position }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
