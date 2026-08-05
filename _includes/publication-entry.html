@@ -1,0 +1,7 @@
+{% assign publication = include.publication %}
+<p class="publication-entry">
+  <strong>{{ publication.title }}</strong><br>
+  {% for author in publication.authors %}{% unless forloop.first %}{% if forloop.last and publication.author_join != "comma" %} and {% else %}, {% endif %}{% endunless %}{% if author.highlight %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% endfor %}{% if publication.authors_punctuation %}{{ publication.authors_punctuation }}{% endif %}<br>
+  <strong><em>{{ publication.venue }}</em> {{ publication.date | date: "%Y" }}</strong>.<br>
+  {% for link in publication.links %}[<a href="{{ link.url }}">{{ link.label }}</a>]{% unless forloop.last %} {% endunless %}{% endfor %}
+</p>

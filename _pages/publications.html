@@ -9,8 +9,7 @@ author_profile: true
   <p>You can also find my articles on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 {% endif %}
 
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
+{% assign publications = site.publications | sort: "display_order" %}
+{% for publication in publications %}
+  {% include publication-entry.html publication=publication %}
 {% endfor %}
