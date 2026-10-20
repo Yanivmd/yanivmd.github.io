@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fullscreen Shape Controller</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Main Grid Container - Now takes up 100% of the screen */
+        .grid-container {
+            flex: 1;
+            display: grid;
+            gap: 12px;
+            padding: 12px;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Dynamic Grid Layouts */
+        .grid-4 { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); }
+        .grid-5 { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); }
+        .grid-6 { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); }
+        
+        /* Make the 5th item span full width in a 5-item layout */
+        .grid-5 .shape-btn:nth-child(5) {
+            grid-column: span 2;
+        }
+
+        /* Shape Buttons */
+        .shape-btn {
+            border: none;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, border-radius 0.2s ease;
+        }
+
+        /* SVGs inside buttons */
+        .shape-btn svg {
+            width: 35%;
+            height: 35%;
+            fill: #fff;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+            transition: width 0.2s ease, height 0.2s ease;
+        }
+
+        /* FULLSCREEN LOCK STATE */
+        .shape-btn.fullscreen-selected {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 100;
+            border-radius: 0px;
+            grid-column: span 2 !important;
+        }
+
+        .shape-btn.fullscreen-selected svg {
+            width: 50%;
+            height: 50%;
+        }
+
+        .shape-btn.hidden-state {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+        }
+
+        /* Color Themes */
+        .red { background-color: #e21b3c; }
+        .blue { background-color: #1368ce; }
+        .yellow { background-color: #d89e00; }
+        .green { background-color: #26890c; }
+        .purple { background-color: #864cbf; }
+        .orange { background-color: #ff6f00; }
+    </style>
+</head>
+<body>
+
+    <!-- Shape Board -->
+    <div id="gridContainer" class="grid-container grid-4">
+        <!-- Triangle -->
+        <button class="shape-btn red" onclick="selectShape(this)">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 22,22 2,22"/></svg>
+        </button>
+        <!-- Diamond -->
+        <button class="shape-btn blue" onclick="selectShape(this)">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 22,12 12,22 2,12"/></svg>
+        </button>
+        <!-- Circle -->
+        <button class="shape-btn yellow" onclick="selectShape(this)">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+        </button>
+        <!-- Square -->
+        <button class="shape-btn green" onclick="selectShape(this)">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+        </button>
+        <!-- Star -->
+        <button class="shape-btn purple" onclick="selectShape(this)">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
+        </button>
+        <!-- Hexagon -->
+        <button class="shape-btn orange" onclick="selectShape(this)">
+            <svg viewBox="0 0 24 24"><polygon points="12,2 22,7 22,17 12,22 2,17 2,7"/></svg>
+        </button>
+    </div>
+
+    <script>
+        const container = document.getElementById('gridContainer');
+        const buttons = Array.from(document.querySelectorAll('.shape-btn'));
+        let currentShapeCount = 4; // Global tracking for reset logic
+
+        function selectShape(selectedBtn) {
+            // If already fullscreen, clicking it again resets the view back to normal
+            if (selectedBtn.classList.contains('fullscreen-selected')) {
+                resetSelection();
+                return;
+            }
+
+            // Force selected button to fill layout and completely hide the others
+            buttons.forEach((btn) => {
+                if (btn === selectedBtn) {
+                    btn.classList.add('fullscreen-selected');
+                    btn.classList.remove('hidden-state');
+                } else {
+                    btn.classList.add('hidden-state');
+                    btn.classList.remove('fullscreen-selected');
+                }
+            });
+        }
+
+        function resetSelection() {
+            // Reset buttons back to original states based on url layout rules
+            buttons.forEach((btn, index) => {
+                btn.classList.remove('fullscreen-selected', 'hidden-state');
+                
+                if (index >= currentShapeCount) {
+                    btn.style.display = 'none';
+                } else {
+                    btn.style.display = 'flex';
+                }
+            });
+        }
+
+        // URL Reading Setup
+        function initFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            let count = parseInt(urlParams.get('shapes'));
+            
+            // Validate the input; safely default to 4 if query missing/malformed
+            if (isNaN(count) || count < 4 || count > 6) {
+                count = 4;
+            }
+            
+            currentShapeCount = count;
+            
+            // Adjust the CSS grid layout properties dynamically
+            container.className = `grid-container grid-${count}`;
+            
+            buttons.forEach((btn, index) => {
+                if (index < count) {
+                    btn.style.display = 'flex';
+                } else {
+                    btn.style.display = 'none';
+                }
+            });
+        }
+
+        // Run setup immediately on load
+        initFromUrl();
+
+        // Lock mobile layout view viewport adjustments
+        document.body.addEventListener('touchmove', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+    </script>
+</body>
+</html>

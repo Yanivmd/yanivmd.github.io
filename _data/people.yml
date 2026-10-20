@@ -30,6 +30,17 @@ current:
         #topic: "Research topic"         # optional
         co_advisor: "Mark Silberstein, Technion"   # optional
 
+      - name: "Daria Bebin"
+        #url: "https://..."              # optional personal/profile page
+        #topic: "Research topic"         # optional
+        #co_advisor: "Mark Silberstein, Technion"   # optional
+
+      - name: "Aviv Shitrit"
+        #url: "https://..."              # optional personal/profile page
+        #topic: "Research topic"         # optional
+        #co_advisor: "Mark Silberstein, Technion"   # optional
+
+
   #- title: "Undergraduate researchers"
   #  members: 
   #    - name: "Michael Blum"
@@ -43,7 +54,7 @@ current:
 #
 alumni:
    - name: "Hila Ziv"
-#     url: "https://..."              # optional
+#     url: "https://www.linkedin.com/in/hila-ziv-742348431"              # optional
      degree: "MSc"                   # optional: PhD, MSc, postdoc, visitor, etc.
      year: 2026                      # optional completion year
 #     topic: "Research topic"         # optional
